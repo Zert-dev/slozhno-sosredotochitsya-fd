@@ -80,10 +80,11 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);/*для мобилок*/
   line-height: 82.5%;
   color: var(--title-color-text);
-  text-shadow: 4px 4px 0px var(--title-shadow-color);
+  text-shadow: 4px 4px 0px var(--accent-first-color);
 
 }
 
+/*TODO НЕПРАВИЛЬНОЕ ОТОБРОЖЕНИЕ ТЕКСТА*/
 .paragraph-title{
   align-self: center;
   justify-self: start;
@@ -115,4 +116,110 @@
 
 .header__theme-menu-button_type_dark{
   border: 1px solid var(--accent-first-color);
+}
+
+/*секция MAIN*/
+
+.main h1{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--accent-first-color);
+}
+
+.main h2 ,h3{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--accent-second-color);
+  background-color: var(--accent-first-color);
+}
+
+.main .title_section-galery{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--accent-second-color);
+  background-color: var(--accent-first-color);
+}
+
+.main p{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-text-color);
+}
+
+/*вообщем надо присмотреть к шрифтам там разные стиля там есть жирный и нормал надо добавить классы*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer-title{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);/*для мобилок*/
+  line-height: 82.5%;
+  color: var(--title-color-text);
+  text-shadow: 2px 2px 0px var(--accent-first-color);
+  justify-self: center;
+  align-self: center;
+}
+
+/*триугольнички*/
+.footer::after{
+  content: "";
+  position: absolute;
+  width: 25px;  
+  height: 25px;
+  border-right: 1px solid #ff0066;
+  border-top: 1px solid #ff0066;
+  justify-self: end;
+}
+
+.footer::before{
+  content: "";
+  position: absolute;
+  width: 25px;  
+  height: 25px;
+  border-left: 1px solid #ff0066;
+  border-bottom: 1px solid #ff0066;
+  justify-self: start;
+  align-self: end;
 }
