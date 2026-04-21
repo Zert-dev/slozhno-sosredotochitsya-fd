@@ -16,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 40px;
 }
 
 /*триугольнички*/
@@ -120,26 +121,39 @@
 
 /*секция MAIN*/
 
-.main h1{
+.blok-title{
   font-family: 'IBM Plex Mono';
-  font-style: normal;
+  font-style: Bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: var(--accent-first-color);
+  margin-bottom: 20px;
 }
 
-.main h2 ,h3{
+.paragraph-block-title{
   font-family: 'IBM Plex Mono';
-  font-style: normal;
+  font-style: Bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: var(--accent-second-color);
   background-color: var(--accent-first-color);
+  margin-bottom: 10px;
 }
 
-.main .title_section-galery{
+.uder-paragraph-title{
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--accent-second-color);
+  background-color: var(--accent-first-color);
+  margin-bottom: 10px;
+}
+
+.title_section-galery{
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 700;
@@ -158,14 +172,37 @@
   color: var(--main-text-color);
 }
 
-/*вообщем надо присмотреть к шрифтам там разные стиля там есть жирный и нормал надо добавить классы*/
+.link-in-text{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-text-color);
+  text-shadow: 1px 2px 0 var(--accent-first-color);
+  text-decoration: none;
+}
 
+.link-in-text:hover{
+  text-decoration: underline;
+}
 
+.link-in-text:focus-visible{
+  outline: 1px solid var(--main-text-color);
+}
 
+.main-content-section{
+  margin-bottom: 50px;
+}
 
-
-
-
+/*секция галерея*/
+.image{
+  width: 100%;
+  height: 100%;
+}
+.image:not(:last-child){
+  margin-bottom: 10px;
+}
 
 
 
