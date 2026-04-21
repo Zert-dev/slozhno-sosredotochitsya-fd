@@ -85,17 +85,17 @@
 
 }
 
-/*TODO НЕПРАВИЛЬНОЕ ОТОБРОЖЕНИЕ ТЕКСТА*/
 .paragraph-title{
   align-self: center;
   justify-self: start;
   font-family: 'IBM Plex Mono';
-  font-style: normal;
+  font-style: Bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: var(--accent-second-color);
   background-color: var(--accent-first-color);
+  white-space: pre-line;
 }
 
 .header__theme-menu-list{
@@ -114,13 +114,11 @@
   color: #FF0070;
 }
 
-
 .header__theme-menu-button_type_dark{
   border: 1px solid var(--accent-first-color);
 }
 
 /*секция MAIN*/
-
 .blok-title{
   font-family: 'IBM Plex Mono';
   font-style: Bold;
