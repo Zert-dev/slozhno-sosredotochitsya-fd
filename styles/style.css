@@ -1,5 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-body{
+body {
   margin: 0;
 }
 
@@ -14,7 +14,7 @@ body{
 }
 
 /*секция HEADER*/
-.header{
+.header {
   height: max(100vh , 668px);
   display: grid;
   grid-template-columns: 1fr;
@@ -24,20 +24,20 @@ body{
 }
 
 /*триугольнички*/
-.header::before{
+.header::before {
   content: "";
   position: absolute;
-  width: 25px;  
+  width: 25px;
   height: 25px;
   border-right: 1px solid var(--coner-color);
   border-top: 1px solid var(--coner-color);
   justify-self: end;
 }
 
-.header::after{
+.header::after {
   content: "";
   position: absolute;
-  width: 25px;  
+  width: 25px;
   height: 25px;
   border-left: 1px solid var(--coner-color);
   border-bottom: 1px solid var(--coner-color);
@@ -45,7 +45,7 @@ body{
   align-self: end;
 }
 
-.decorated-zone_header{
+.decorated-zone_header {
   position: absolute;
   justify-self: end;
   color: var(--accent-first-color);
@@ -53,7 +53,7 @@ body{
 }
 
 /*точка после REC*/
-.decorated-zone_header::after{
+.decorated-zone_header::after {
   content: "";
   display: var(--display-rec);
   width: 9px;
@@ -71,12 +71,12 @@ body{
   margin-right: 10px;
 }
 
-.header__theme-menu{
+.header__theme-menu {
   align-self: center;
   justify-self: end;
 }
 
-.title{
+.title {
   align-self: center;
   justify-self: center;
   font-family: 'IBM Plex Mono';
@@ -88,7 +88,7 @@ body{
   text-shadow: 4px 4px 0px var(--accent-first-color);
 }
 
-.paragraph-title{
+.paragraph-title {
   align-self: center;
   justify-self: start;
   font-family: 'IBM Plex Mono';
@@ -101,11 +101,11 @@ body{
   white-space: pre-line;
 }
 
-.header__theme-menu-list{
+.header__theme-menu-list {
   list-style: none;
 }
 
-.header__theme-menu-button{
+.header__theme-menu-button {
   background-color: transparent;
   border: none;
   font-family: 'IBM Plex Mono';
@@ -117,17 +117,17 @@ body{
   color: var(--menu-color);
 }
 
-.header__theme-menu-button_active{
+.header__theme-menu-button_active {
   border: 1px solid var(--menu-color);
 }
 
 /*секция MAIN*/
-.main{
+.main {
   background-color: var(--accent-second-color);
   padding: 0 8px;
 }
 
-.blok-title{
+.blok-title {
   font-family: 'IBM Plex Mono';
   font-style: Bold;
   font-weight: 700;
@@ -137,7 +137,7 @@ body{
   margin-bottom: 20px;
 }
 
-.paragraph-block-title{
+.paragraph-block-title {
   font-family: 'IBM Plex Mono';
   font-style: Bold;
   font-weight: 700;
@@ -148,7 +148,7 @@ body{
   margin-bottom: 10px;
 }
 
-.uder-paragraph-title{
+.uder-paragraph-title {
   font-family: IBM Plex Mono;
   font-weight: 400;
   font-style: Regular;
@@ -159,7 +159,7 @@ body{
   margin-bottom: 10px;
 }
 
-.title_section-galery{
+.title_section-galery {
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 700;
@@ -169,7 +169,7 @@ body{
   background-color: var(--accent-first-color);
 }
 
-.main p{
+.main p {
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
@@ -178,7 +178,7 @@ body{
   color: var(--main-text-color);
 }
 
-.link-in-text{
+.link-in-text {
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
@@ -189,30 +189,30 @@ body{
   text-decoration: none;
 }
 
-.link-in-text:hover{
+.link-in-text:hover {
   text-decoration: underline;
 }
 
-.link-in-text:focus-visible{
+.link-in-text:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
 
-.main-content-section{
+.main-content-section {
   padding-bottom: 50px;
 }
 
 /*секция галерея*/
-.image{
+.image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.image:not(:last-child){
+.image:not(:last-child) {
   margin-bottom: 10px;
 }
 
 /*Footer*/
-.footer{
+.footer {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -221,7 +221,7 @@ body{
   padding: 8px;
 }
 
-.footer-title{
+.footer-title {
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 700;
@@ -234,7 +234,7 @@ body{
 }
 
 /*триугольнички*/
-.footer::after{
+.footer::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -244,7 +244,7 @@ body{
   justify-self: end;
 }
 
-.footer::before{
+.footer::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -256,204 +256,201 @@ body{
 }
 
 /*768 x 1024*/
-@media (width >= 768px ){
-  body{
+@media (width >= 768px ) {
+  body {
     margin: 0px;
   }
 
-  .header{
-    margin: 20px;
-  }
-
-  .main{
+  .main {
     padding: 0 20px;
   }
 
-  .main-content-section{
+  .main-content-section {
     padding-bottom: 80px;
   }
 
-  .header{
+  .header {
     height: max(100vh , 768px);
     grid-template-rows: 1fr min-content 1fr;
+    margin: 20px;
   }
 
-  .footer{
+  .footer {
     padding: 20px;
   }
 
-  .title{
+  .title {
     justify-self: start;
   }
 
-  .paragraph-title{
+  .paragraph-title {
     justify-self: end;
     width: 364px;
     height: 117px;
   }
 
-  .first-section-grid{
+  .first-section-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 20px;
   }
 
-  .first-block-title{
+  .first-block-title {
     grid-row: 1/3;
   }
 
-  .blok-title{
+  .blok-title {
     width: 236px;
   }
 
-  .three-section-grid{
+  .three-section-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(5 ,min-content);
   }
 
-  .three-block-title{
+  .three-block-title {
     grid-row: 1/6;
   }
 
-  .gallery-grid{
+  .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-template-rows: repeat(3 ,1fr);
     gap: 20px;
   }
 
-  .sunset{
+  .sunset {
     grid-column: 1/3;
     grid-row: 1/2;
   }
 
-  .ice{
+  .ice {
     grid-row: 1/3;
     grid-column: 3/4;
   }
 
-  .tape{
+  .tape {
     grid-row: 2/4;
     grid-column: 1/2;
   }
 
-  .books{
+  .books {
     grid-row: 2/3;
     grid-column: 2/3;
   }
 
-  .street{
+  .street {
     grid-row: 3/4;
     grid-column: 2/4;
   }
 }
 
 /*1024 x 768*/
-@media (width >= 1024px){
-  body{
+@media (width >= 1024px) {
+  body {
     margin: 0px;
   }
 
-  .header{
+  .header {
     margin: 20px;
   }
 
-  .main{
+  .main {
     padding: 0 20px;
   }
 
-  .main-content-section{
+  .main-content-section {
     padding-bottom: 80px;
   }
 
-  .footer{
+  .footer {
     padding: 20px;
   }
 
-  .header__theme-menu{
+  .header__theme-menu {
   align-self: start;
   justify-self: center;
   }
 
-  .header__theme-menu-list{
+  .header__theme-menu-list {
     display: flex;
     flex-direction: row;
     gap: 23px;
   }
 
-  .paragraph-title{
+  .paragraph-title {
     justify-self: end;
     width: 491px;
     height: 71px;
   }
   
-  .first-section-grid{
+  .first-section-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 20px;
   }
 
-  .first-block-title{
+  .first-block-title {
     grid-row: 1/3;
   }
 
-  .blok-title{
+  .blok-title {
     width: 312px;
   }
 
-  .second-section-grid{
+  .second-section-grid {
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-template-rows: min-content 1fr;
     column-gap: 20px;
   }
 
-  .second-block-title{
+  .second-block-title {
     grid-row: 1/2;
     grid-column: 1/4;
   }
 
-  .three-section-grid{
+  .three-section-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(5 ,min-content);
   }
 
-  .three-block-title{
+  .three-block-title {
     grid-row: 1/6;
   }
 
-  .gallery-grid{
+  .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-template-rows: repeat(3 ,1fr);
     gap: 20px;
   }
 
-  .sunset{
+  .sunset {
     grid-column: 1/3;
     grid-row: 1/2;
   }
 
-  .ice{
+  .ice {
     grid-row: 1/3;
     grid-column: 3/4;
   }
 
-  .tape{
+  .tape {
     grid-row: 2/4;
     grid-column: 1/2;
   }
 
-  .books{
+  .books {
     grid-row: 2/3;
     grid-column: 2/3;
   }
 
-  .street{
+  .street {
     grid-row: 3/4;
     grid-column: 2/4;
   }

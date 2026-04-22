@@ -2,7 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
+:root {
   --background-image_page: url(../images/cover-image-dark.png);
   --accent-first-color: #FF0070;/*розовый*/
   --accent-second-color: #000028;/*темно сиинй*/
