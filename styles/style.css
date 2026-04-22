@@ -29,8 +29,8 @@ body{
   position: absolute;
   width: 25px;  
   height: 25px;
-  border-right: 1px solid #ff0066;
-  border-top: 1px solid #ff0066;
+  border-right: 1px solid var(--coner-color);
+  border-top: 1px solid var(--coner-color);
   justify-self: end;
 }
 
@@ -39,8 +39,8 @@ body{
   position: absolute;
   width: 25px;  
   height: 25px;
-  border-left: 1px solid #ff0066;
-  border-bottom: 1px solid #ff0066;
+  border-left: 1px solid var(--coner-color);
+  border-bottom: 1px solid var(--coner-color);
   justify-self: start;
   align-self: end;
 }
@@ -50,12 +50,13 @@ body{
   position: absolute;
   justify-self: end;
   color: var(--accent-first-color);
+  display: var(--display-rec);
 }
 
 /*точка после REC*/
 .decorated-zone_header::after{
   content: "";
-  display: inline-block;
+  display: var(--display-rec);
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -84,7 +85,7 @@ body{
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);/*для мобилок*/
   line-height: 82.5%;
-  color: var(--title-color-text);
+  color: var(--focus-title-color);
   text-shadow: 4px 4px 0px var(--accent-first-color);
 }
 
@@ -96,7 +97,7 @@ body{
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: var(--accent-second-color);
+  color: var(--block-title-color);
   background-color: var(--accent-first-color);
   white-space: pre-line;
 }
@@ -114,11 +115,11 @@ body{
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  color: #FF0070;
+  color: var(--menu-color);
 }
 
-.header__theme-menu-button_type_dark{
-  border: 1px solid var(--accent-first-color);
+.header__theme-menu-button_active{
+  border: 1px solid var(--menu-color);
 }
 
 /*секция MAIN*/
@@ -143,7 +144,7 @@ body{
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: var(--accent-second-color);
+  color: var(--block-title-color);
   background-color: var(--accent-first-color);
   margin-bottom: 10px;
 }
@@ -154,7 +155,7 @@ body{
   font-style: Regular;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--accent-second-color);
+  color: var(--block-title-color);
   background-color: var(--accent-first-color);
   margin-bottom: 10px;
 }
@@ -227,7 +228,7 @@ body{
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);/*для мобилок*/
   line-height: 82.5%;
-  color: var(--title-color-text);
+  color: var(--focus-title-color);
   text-shadow: 2px 2px 0px var(--accent-first-color);
   justify-self: center;
   align-self: center;
@@ -239,8 +240,8 @@ body{
   position: absolute;
   width: 25px;  
   height: 25px;
-  border-right: 1px solid #ff0066;
-  border-top: 1px solid #ff0066;
+  border-right: 1px solid var(--coner-color);
+  border-top: 1px solid var(--coner-color);
   justify-self: end;
 }
 
@@ -249,8 +250,8 @@ body{
   position: absolute;
   width: 25px;  
   height: 25px;
-  border-left: 1px solid #ff0066;
-  border-bottom: 1px solid #ff0066;
+  border-left: 1px solid var(--coner-color);
+  border-bottom: 1px solid var(--coner-color);
   justify-self: start;
   align-self: end;
 }

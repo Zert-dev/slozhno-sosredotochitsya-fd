@@ -8,4 +8,10 @@
   --accent-second-color: #000028;/*темно сиинй*/
   --title-color-text: #DB00FF;
   --main-text-color: #F1B2CE;
+  --focus-title-color:#DB00FF;
+  --block-title-color: #000028;
+  --coner-color: #FF0070;
+  --menu-color:#FF0070;
+  --display-rec: inline-block;
 }
+
