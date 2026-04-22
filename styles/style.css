@@ -45,7 +45,6 @@ body{
   align-self: end;
 }
 
-
 .decorated-zone_header{
   position: absolute;
   justify-self: end;
@@ -238,7 +237,7 @@ body{
 .footer::after{
   content: "";
   position: absolute;
-  width: 25px;  
+  width: 25px;
   height: 25px;
   border-right: 1px solid var(--coner-color);
   border-top: 1px solid var(--coner-color);
@@ -248,7 +247,7 @@ body{
 .footer::before{
   content: "";
   position: absolute;
-  width: 25px;  
+  width: 25px;
   height: 25px;
   border-left: 1px solid var(--coner-color);
   border-bottom: 1px solid var(--coner-color);
@@ -257,7 +256,6 @@ body{
 }
 
 /*768 x 1024*/
-
 @media (width >= 768px ){
   body{
     margin: 0px;
