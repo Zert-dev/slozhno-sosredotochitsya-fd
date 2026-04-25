@@ -10,8 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image_page: url(../images/cover-image-dark.png);
-  --accent-first-color: #FF0070;/*розовый*/
-  --accent-second-color: #000028;/*темно сиинй*/
+  --accent-light-color: #FF0070;/*розовый*/
+  --accent-back-color: #000028;/*темно сиинй*/
   --title-color-text: #DB00FF;
   --main-text-color: #F1B2CE;
   --focus-title-color:#DB00FF;
