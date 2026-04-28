@@ -15,10 +15,15 @@
   --menu-color:#FF0070;
   --transparent-accent-color: rgb(255 0 112 / .4);
   --display-rec: inline-block;
+  --gap-xs: 10px;
+  --gap-s: 20px;
+  --gap-m: 40px;
+  --gap-xl: 79px;
+}
+/*
   --offset-xs: 10px;
   --offset-s: 20px;
   --offset-m: 40px;
   --offset-l: 60px;
   --offset-xl: 79px;
-}
-
+*/

@@ -7,7 +7,7 @@
   background-attachment: fixed;
   font-family: var(--main-font), monospace;
   font-size: 18px;
-  gap: var(--offset-m);
+  gap: var(--gap-m);
 }
 
 /*секция HEADER*/
@@ -16,7 +16,7 @@
   grid-template-rows: 1fr auto 1fr;
   height: 100vh;
   min-height: 668px;
-  padding-inline: var(--offset-xs);
+  padding-inline: var(--gap-xs);
 }
 
 /*триугольнички*/
@@ -84,7 +84,7 @@
 
 .header__theme-menu-list {
   display: grid;
-  gap: var(--offset-xs);
+  gap: var(--gap-xs);
 }
 
 .header__theme-menu-button {
@@ -164,12 +164,12 @@
 .main {
   display: grid;
   gap: 50px;
-  padding-inline: var(--offset-xs);
+  padding-inline: var(--gap-xs);
 }
 
 .main-content-section {
   display: grid;
-  gap: var(--offset-s);
+  gap: var(--gap-s);
 }
 
 .section-title {
@@ -182,12 +182,12 @@
 
 .text-block {
   display: grid;
-  gap: var(--offset-s);
+  gap: var(--gap-s);
 }
 
 .text-card {
   display: grid;
-  gap: var(--offset-xs);
+  gap: var(--gap-xs);
 }
 
 .title_section-galery {
@@ -233,7 +233,7 @@
 
 .gallery-grid-content {
   display: grid;
-  gap: var(--offset-xs);
+  gap: var(--gap-xs);
 }
 
 .image {
@@ -269,7 +269,7 @@
 @media (width >=768px) {
 
   .page {
-    gap: var(--offset-l);
+    gap: var(--gap-l);
   }
 
   .header {
@@ -280,23 +280,23 @@
   }
 
   .decorated-zone::before {
-    inset-inline-end: var(--offset-s);
-    inset-block-start: var(--offset-s);
+    inset-inline-end: var(--gap-s);
+    inset-block-start: var(--gap-s);
   }
 
     .decorated-zone::after {
-    inset-inline-start: var(--offset-s);
-    inset-block-end: var(--offset-s);
+    inset-inline-start: var(--gap-s);
+    inset-block-end: var(--gap-s);
   }
 
   .header__rec-marker {
     inset-inline-end: 50px;
-    inset-block-start: var(--offset-s);
+    inset-block-start: var(--gap-s);
   }
 
   .header__theme-menu {
     grid-column: 2;
-    padding-block-start: var(--offset-s);
+    padding-block-start: var(--gap-s);
     padding-inline-end: 15px;
   }
 
@@ -315,12 +315,12 @@
 
   .decorated-zone_header{
     inset-inline-end: 20px;
-    inset-block-start: var(--offset-s);
+    inset-block-start: var(--gap-s);
   }
 
   .main {
-    gap: var(--offset-xl);
-    padding-inline: var(--offset-s);
+    gap: var(--gap-xl);
+    padding-inline: var(--gap-s);
   }
 
   .intro-grid {
@@ -335,7 +335,7 @@
 
   .factors-text-block{
     display: grid;
-    gap: var(--offset-s);
+    gap: var(--gap-s);
   }
 
   .factors-grid .text-block{
@@ -360,7 +360,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: var(--offset-s);
+    gap: var(--gap-s);
   }
 
   .sunset {
