@@ -6,12 +6,19 @@
   --background-image_page: url(../images/cover-image-dark.png);
   --accent-light-color: #FF0070;/*розовый*/
   --accent-back-color: #000028;/*темно сиинй*/
+  --section-title-color: #FF0070;
   --title-color-text: #DB00FF;
   --main-text-color: #F1B2CE;
   --focus-title-color:#DB00FF;
   --block-title-color: #000028;
   --coner-color: #FF0070;
   --menu-color:#FF0070;
+  --transparent-accent-color: rgb(255 0 112 / .4);
   --display-rec: inline-block;
+  --offset-xs: 10px;
+  --offset-s: 20px;
+  --offset-m: 40px;
+  --offset-l: 60px;
+  --offset-xl: 79px;
 }
 
